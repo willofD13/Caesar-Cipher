@@ -1,6 +1,6 @@
 def caesar_cipher (string, shift_factor)
   nums = string.split('').map { |i| i.ord}
-  new_arr = nums.map do |char|
+  new_arr = nums.map do |num|
     
       if num.between?(65, 90)
         new_num = num + shift_factor
@@ -16,10 +16,10 @@ def caesar_cipher (string, shift_factor)
             final_char = final_num.chr
           else final_char = new_num.chr
           end
+      else num
       end
-    
-    
+  
   end
   new_arr.join('')
 end
-
+caesar_cipher("What a string!", 5)
