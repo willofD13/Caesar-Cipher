@@ -25,4 +25,3 @@ def caesar_cipher (string, shift_factor)
   new_arr.join('')
 end
 
-p caesar_cipher('What a string!', 5)
