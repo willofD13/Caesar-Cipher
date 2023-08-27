@@ -18,6 +18,7 @@ def caesar_cipher (string, shift_factor)
       else num.chr
       end  
   end
-  new_arr.join('')
+ puts new_arr.join('')
 end
 
+caesar_cipher('hello',3)
